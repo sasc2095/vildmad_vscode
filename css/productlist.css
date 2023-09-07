@@ -1,4 +1,9 @@
-gridProductlist{
+.gridProductlist{
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+}
+
+.imageProductlist{
+width: 250px;
+border: 2px solid #7895da;
 }
