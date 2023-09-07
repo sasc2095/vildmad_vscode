@@ -1,0 +1,9 @@
+.grid_product {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.imageprodukt{
+    width: 250px;
+    border: 2px solid #7895da;
+}
