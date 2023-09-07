@@ -4,18 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forside</title>
+    <title>Produktside</title>
   </head>
   <body>
     <header></header>
     <main>
       <h1>Vild Mad</h1>
-      <img src="#" alt="plain billede" />
-      <article class="menu_knapper">
-        <button>?</button>
-        <button>?</button>
-        <button>?</button>
-        <button>?</button>
+      <button class="back" a href="/html/frontpage.html">Tilbage</button>
+      <article class="products">
+        <img class="product_image" src="#" alt="produktbillede" />
+        <h3></h3>
+        <button class="readmore">Læs mere</button>
       </article>
     </main>
     <footer></footer>
