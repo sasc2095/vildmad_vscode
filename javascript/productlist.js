@@ -1,41 +1,33 @@
 const urlParams = new URLSearchParams(window.location.search);
-const categories = urlParams.get("categories");
+const strand = urlParams.get("strand");
+const categoryParam = strand ? "?strand=" + strand : "";
 
-if (category) {
-  fetch(
-    "https://uutiizppilsesjcptglo.supabase.co/rest/v1/vildmad_database?categories/0/name=" +
-      categories
-  )
-    .then((res) => res.json())
-    .then(showProducts);
-} else {
-  fetch("https://uutiizppilsesjcptglo.supabase.co/rest/v1/vildmad_database")
-    .then((res) => res.json())
-    .then(showProducts);
+// supabase link
+const key =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1dGlpenBwaWxzZXNqY3B0Z2xvIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTQwNzQ0MTgsImV4cCI6MjAwOTY1MDQxOH0.NUGKP51o37ORWFiRq3CrUp7oImAREwLfwuA5LWPaK2I";
+
+fetch("https://uutiizppilsesjcptglo.supabase.co/rest/v1/vildmad_database", {
+  method: "GET",
+  headers: {
+    apikey: key,
+  },
+})
+  .then((res) => res.json())
+  .then(showStrande);
+
+function showStrande(strande) {
+  strande.forEach(showStrand);
 }
 
-function showProducts(products) {
-  //looper og kalder showProduct
-  products.forEach(showProduct);
-}
-
-function showProduct(product) {
-  console.log(product);
-  //fang template
+function showStrand(strand) {
+  console.log(strand);
   const template = document.querySelector("#productListTemplate").content;
-  //lav en kopi
   const copy = template.cloneNode(true);
-  //ændre indhold
-  copy.querySelector("h3").textContent = product.productdisplayname;
 
-  copy.querySelector(
-    "img"
-  ).src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+  copy.querySelector(".title").textContent = strand.title;
 
   copy
-    .querySelector(".readMore")
-    .setAttribute("href", `produkt.html?id=${product.id}`);
-
-  //appende
-  document.querySelector(".grid").appendChild(copy);
+    .querySelector(".imageProductlist")
+    .setAttribute("href", `product.html?id=${strand.id}`);
+  document.querySelector(".gridProductlist").appendChild(copy);
 }
