@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="da">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Produktside</title>
-  </head>
-  <body>
-    <header></header>
-    <main>
-      <h1>Vild Mad</h1>
-      <button class="back" a href="/html/frontpage.html">Tilbage</button>
-      <article class="products">
-        <img class="product_image" src="#" alt="produktbillede" />
-        <h3>hh</h3>
-        <button class="readmore">Læs mere</button>
-      </article>
-    </main>
-    <footer></footer>
-  </body>
-  <script src="/javascript/script.js"></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produktside</title>
+  <link rel="stylesheet" href="/css/productlist.css">
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <h1>Vild Mad</h1>
+    <button class="back" a href="/html/frontpage.html">Tilbage</button>
+
+    <div class="gridProductlist">
+      <template id="productListTemplate">
+        <article class="product">
+          <a href="product.html"><img
+              src="https://vildmadv2.vps.webdock.io/application/files/7116/2029/3479/Blaeretang_ravarkort.png"
+              class="imageProductlist" alt="billede"></a>
+          <h2 class="title">Blæretang</h2>
+        </article>
+      </template>
+      <button class="readmore">Læs mere</button>
+    </div>
+
+
+  </main>
+  <footer></footer>
+  <script src="/javascript/productlist.js"></script>
+</body>
+
+
 </html>
