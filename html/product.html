@@ -8,8 +8,20 @@
     <link rel="stylesheet" href="/css/product.css">
 </head>
 
-<body>
-    <header></header>
+<body id="productBackground">
+    <header class="navigation">
+        <a class="logoHeader" href="index.html">
+            <img src="/SVG/efteraar.svg" alt="Logo">
+        </a>
+
+        <nav>
+            <button class="toggle-btn">MENU</button>
+            <ul>
+                <li><a href="productlist.html">Sankelandskaber</a></li>
+                <li><a href="https://vildmad.dk/dk">VILDMAD</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <div class="grid_product">
             <img src="https://vildmadv2.vps.webdock.io/application/files/7116/2029/3479/Blaeretang_ravarkort.png"
@@ -25,7 +37,16 @@
             </article>
         </div>
     </main>
-
+    <footer class="stylingFooter">
+        <section class="grid_footer">
+            <p>Et projekt udviklet af Monica, Sascha og Nina</p>
+            <p> Virkeliggjort i samarbejde med</p>
+            <label>
+                E-mail
+                <input type="email" name="email">
+            </label>
+        </section>
+    </footer>
     <script src="/javascript/product.js"></script>
 </body>
 

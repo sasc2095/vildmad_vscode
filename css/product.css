@@ -1,9 +1,62 @@
+#productBackground{ /* evt slet denne*/
+    background-image: url(../SVG/sommer_baggrund.svg);
+}
+
 .grid_product {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
+.grid_footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    border-top: 1px solid #000000;
+}
+
+.stylingFooter{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15%; /* evt slet denne*/
+}
+
+.stylingFooter p, .stylingFooter label{
+text-align: center;
+}
+
+
 .imageprodukt{
     width: 250px;
     border: 2px solid #7895da;
 }
+
+/* Styling af header*/
+.logoHeader img{
+    width: 100px;
+    margin-left: 30px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    border-bottom: 1px solid #000000;
+
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation li {
+    display: inline-block;
+    margin-left: 5px;    margin-right: 50px;
+    margin-right: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #000000;
+}
+
