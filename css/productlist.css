@@ -1,9 +1,31 @@
-.gridProductlist{
-    display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+.gridProductlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem;
+  margin-left: 5rem;
 }
 
-.imageProductlist{
-width: 250px;
-border: 2px solid #7895da;
+.imageProductlist {
+  width: 250px;
+  border: 2px solid #7895da;
+  margin-top: 1rem;
+}
+
+.readmore {
+  border: 2rem;
+  margin-top: 1rem;
+  margin: 0rem;
+  width: 80%;
+  margin-bottom: 3.5rem;
+}
+
+main h1 {
+  margin-left: 40.5rem;
+  margin-top: 4rem;
+}
+
+button {
+  margin-left: 5rem;
+  margin-top: 4rem;
 }
