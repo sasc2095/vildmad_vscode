@@ -9,19 +9,29 @@
 </head>
 
 <body id="productBackground">
-    <header class="navigation">
-        <a class="logoHeader" href="index.html">
-            <img src="/SVG/efteraar.svg" alt="Logo">
-        </a>
+    <header>
+        <div class="navigation">
+            <a class="logoHeader" href="index.html">
+                <img src="/SVG/efteraar.svg" alt="Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="productlist.html">Sankelandskaber</a></li>
+                    <li><a href="https://vildmad.dk/dk">VILDMAD</a></li>
+                </ul>
+            </nav>
 
-        <nav>
-            <button class="toggle-btn">MENU</button>
-            <ul>
-                <li><a href="productlist.html">Sankelandskaber</a></li>
-                <li><a href="https://vildmad.dk/dk">VILDMAD</a></li>
-            </ul>
-        </nav>
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
+        </div>
     </header>
+
+    <nav class="mobile-nav">
+        <a href="productlist.html">Sankelandskaber</a>
+        <a href="https://vildmad.dk/dk">VILDMAD</a>
+    </nav>
+
     <main>
         <div class="grid_product">
             <img src="https://vildmadv2.vps.webdock.io/application/files/7116/2029/3479/Blaeretang_ravarkort.png"
@@ -39,12 +49,21 @@
     </main>
     <footer class="stylingFooter">
         <section class="grid_footer">
-            <p>Et projekt udviklet af Monica, Sascha og Nina</p>
-            <p> Virkeliggjort i samarbejde med</p>
-            <label>
-                E-mail
-                <input type="email" name="email">
-            </label>
+            <div>
+                <p>Et projekt udviklet af Monica, Sascha og Nina</p>
+            </div>
+            <div>
+                <p> Virkeliggjort i samarbejde med</p>
+            </div>
+            <div>
+                <label>
+                    <p>Ønsker du at tilmelde dig vores nyhedsbrev</p>
+                    E-mail
+                    <input type="email" name="email">
+                </label>
+                <img src="/SVG/facebookLogo.png" alt="">
+                <img src="/SVG/instagramLogo.png" alt="">
+            </div>
         </section>
     </footer>
     <script src="/javascript/product.js"></script>
