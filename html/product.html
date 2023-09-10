@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
     <link rel="stylesheet" href="/css/product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap" rel="stylesheet">
 </head>
 
 <body id="productBackground">
     <header class="navigation">
-            <a class="logoHeader" href="index.html">
+            <a class="logoHeader" href="frontpage.html">
                 <img src="/SVG/efteraar.svg" alt="Logo">
             </a>
 
@@ -47,6 +50,8 @@
             </article>
         </div>
     </main>
+
+
     <footer class="stylingFooter">
         <section class="grid_footer">
             <div>
@@ -54,15 +59,28 @@
             </div>
             <div>
                 <p> Virkeliggjort i samarbejde med</p>
+                <img src="/SVG/vildmadLogo1.png" class="Logo_footer" alt="Logo">
+                <img src="/SVG/villdmadLogo2.png" class="Logo_footer" alt="Logo">
+                <img src="/SVG/villdmadLogo3.png" class="Logo_footer" alt="Logo">
+                <img src="/SVG/villdmadLogo4.png" class="Logo_footer" alt="Logo">
+                <img src="/SVG/villdmadLogo5.png" class="Logo_footer" alt="Logo">
+                <img src="/SVG/villdmadLogo6.png" class="Logo_footer" alt="Logo">
+
             </div>
             <div>
                 <label>
-                    <p>Ønsker du at tilmelde dig vores nyhedsbrev</p>
+                    <p>Tilmeld dig vores nyhedsbrev her</p>
                     E-mail
                     <input type="email" name="email">
                 </label>
-                <img src="/SVG/facebookLogo.png" alt="">
-                <img src="/SVG/instagramLogo.png" alt="">
+                <button class="sendMail">Send</button>
+<br> <!-- slet denne stykle med css-->
+                <a class="Logo_footer" href="https://www.facebook.com/vildmaddk">
+                    <img src="/SVG/facebookLogo.png" alt="facebookLogo">
+                </a>
+                <a class="Logo_footer" href="https://www.instagram.com/vildmaddk/">
+                    <img src="/SVG/instagramLogo.png" alt="InstagramLogo">
+                </a>
             </div>
         </section>
     </footer>
