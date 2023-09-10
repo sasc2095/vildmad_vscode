@@ -151,6 +151,13 @@
 
     .hamburger {
         display: none;
-
     }
+
+}
+
+@media (max-width: 767px) {
+    .web-nav {
+        display: none;
+    }
+
 }
