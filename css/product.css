@@ -1,9 +1,188 @@
+#productBackground {
+    /* evt slet denne*/
+    background-image: url(../SVG/sommer_baggrund.svg);
+}
+
 .grid_product {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    text-align: left;
+    /*margin: 70px;*/
+    font-family: 'DM Sans', sans-serif;
 }
 
-.imageprodukt{
+.grid_footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.stylingFooter {
+    /*margin-top: 20%;*/
+    background-color: #f4c077;
+    opacity: 95%;
+    /*padding: 35px;*/
+    border: 0.5px solid #000000;
+    margin-top: 15rem;
+
+}
+
+.stylingFooter p,
+.stylingFooter label {
+    text-align: center;
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.Logo_footer{
+    width: 15%;
+}
+
+/* billede på produktside*/
+.imageprodukt {
     width: 250px;
-    border: 2px solid #7895da;
+    border: 0.5px solid #000000;
+}
+
+/* Styling af header*/
+.logoHeader img {
+    width: 100px;
+    margin-left: 30px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    border: 0.5px solid #000000;
+    background-color: #e1ffff;
+    opacity: 95%;
+
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation li {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 50px;
+    margin-right: 60px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #000000;
+}
+
+/* Hamburger menu */
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #000000;
+    margin: 5px -10px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-50deg) translate(-8px, 4px);
+    position: relative;
+    z-index: 100;
+}
+
+.hamburger.is-active:after {
+    transform: rotate(50deg) translate(-10px, -7px);
+    position: relative;
+    z-index: 100;
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+    background-color: rgb(111, 221, 201);
+    padding-top: 120px;
+    transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+    left: 0;
+}
+
+.mobile-nav a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 12px 16px;
+    background-color: #e67a7a;
+
+    color: #000000;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+
+}
+
+.mobile-nav a {
+    transition: transform 0.2 ease;
+}
+
+.mobile-nav a:hover {
+    background-color: #ffa5a5;
+    transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+    .mobile-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .web-nav {
+        display: none;
+    }
+
+    .stylingFooter {
+        /* se på denne igen*/
+        display: none;
+    }
+
 }
