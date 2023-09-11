@@ -21,9 +21,18 @@
   margin-bottom: 3.5rem;
 }
 
+.readmore:hover{
+  transform: scale(1.1);
+}
+
+
 .back {
   width: 8%;
   margin-left: 5rem;
+}
+
+.back:hover{
+  transform: scale(1.1);
 }
 
 main h1 {
@@ -161,6 +170,11 @@ button {
   width: 100px;
   margin-left: 30px;
 }
+
+.logoHeader:hover{
+  transform: scale(1.1);
+}
+
 
 .nav5klasse {
   font-family: "DM Sans", sans-serif;
