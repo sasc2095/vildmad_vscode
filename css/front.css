@@ -19,12 +19,67 @@ footer {
   grid-template-columns: repeat(4, 1fr);
 }
 
-/* footer */
+
+/*styling af footer*/
+.grid_footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.stylingFooter {
+  /*margin-top: 20%;*/
+  background-color: #ffd4a3;
+  opacity: 95%;
+  /*padding: 35px;*/
+  border: 0.5px solid #000000;
+  margin-top: 15rem;
+}
+
+.stylingFooter p, .stylingFooter h3,
+.stylingFooter label {
+  text-align: left;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  color: #3a3a3a;
+}
+
+.Logo_footer{
+  width: 24.5%;
+  margin-bottom: 1rem;
+}
+
+.fbInstaIcon{
+  width: 24.5%;
+  margin-bottom: 1rem;
+}
+
+.fbInstaIcon:hover img{
+  transform: scale(1.1);
+
+}
+
+.f1{
+  margin-left: 1rem;
+}
+
+.navne{
+  list-style: none;
+  margin-left: -2.5rem;
+}
+
+.f3{
+  margin-left: 7rem;
+}
+.f4 {
+  margin-left: 13rem;
+  margin-top: 1rem;
+}
+
 .form {
   position: relative;
   padding: 1rem;
   width: auto;
-  height: 3rem;
+  height: 0.5rem;
   margin-bottom: 1rem;
 }
 
@@ -36,9 +91,9 @@ footer {
   height: 100%;
   border: 2px solid #766a6a;
   border-radius: 2rem;
-  color: aqua;
+  color: #3a3a3a;
   outline: none;
-  padding: 1.25rem;
+  /*padding: 1.25rem;*/
   background: none;
 }
 
@@ -51,50 +106,39 @@ footer {
 .label_email {
   position: absolute;
   left: 1rem;
-  top: 0.8rem;
+  top: 0.rem;
   padding: 0 0.5rem;
-  color: green;
+  color: #3a3a3a;
   cursor: text;
   transition: top 0.2s ease-in, left 0.2s ease-in, font-size 0.2s ease-in;
-  background-color: orange;
+  /*background-color: orange;*/
 }
 
 .label_conditions {
-  color: pink;
+  color: rgb(0, 0, 0);
 }
 
 .name_form:focus ~ .label_name,
 .name_form:not(:placeholder-shown).name_form:not(:focus) ~ .name_label,
 .email_form:focus ~ .label_email,
 .email_form:not(:placeholder-shown).email_form:not(:focus) ~ .email_label {
-  top: -0.5rem;
+  /*top: -0.5rem;*/
   font-size: 0.8rem;
-  left: 0.8rem;
+  left: -3.3rem;
 }
 
 .submit {
   border-radius: 4rem;
-  background-color: #88a386;
+  background-color: #3a3a3a;
   padding: 1rem 1rem;
   width: auto;
   border: none;
   color: white;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 3.5rem;
 }
 
-#imgindex {
-  width: 100%;
-  background-image: url(/SVG/plain2.svg);
-}
-
-.menu_buttons {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 70%;
-  gap: 2.5rem;
-  margin-left: 10rem;
-  margin-top: 4rem;
-  margin-bottom: 7rem;
-}
 
 /* Styling af header*/
 .logoHeader img {
