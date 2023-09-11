@@ -25,6 +25,7 @@ function showStrand(strand) {
   const copy = template.cloneNode(true);
 
   copy.querySelector(".title").textContent = strand.title;
+  copy.querySelector("img").src = strand.profile_image;
 
   copy
     .querySelector(".imageProductlist")
