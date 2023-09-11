@@ -1,19 +1,21 @@
-* {
+/** {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+*/
 body {
   line-height: 1.4;
 }
 
+/*
 main,
 footer {
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 3rem;
 }
-
+*/
 .grid_4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -28,11 +30,13 @@ footer {
 
 .stylingFooter {
   /*margin-top: 20%;*/
-  background-color: #ffd4a3;
+  background-color: #feeeaf;
   opacity: 95%;
   /*padding: 35px;*/
   border: 0.5px solid #000000;
   margin-top: 15rem;
+  margin: 1rem;
+
 }
 
 .stylingFooter p, .stylingFooter h3,
