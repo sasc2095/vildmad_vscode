@@ -22,7 +22,7 @@ fetch(
 function showStrand(strand) {
   const data = strand[0];
   document.querySelector("p.id").textContent = data.id;
-  document.querySelector("h2.title").textContent = data.title;
+  document.querySelector(".title").textContent = data.title;
   document.querySelector("sankelandskaber/0/title").textContent =
     data.sankelandskaber;
 
