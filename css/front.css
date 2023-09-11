@@ -19,7 +19,6 @@ footer {
   grid-template-columns: repeat(4, 1fr);
 }
 
-
 /*styling af footer*/
 .grid_footer {
   display: grid;
@@ -35,39 +34,39 @@ footer {
   margin-top: 15rem;
 }
 
-.stylingFooter p, .stylingFooter h3,
+.stylingFooter p,
+.stylingFooter h3,
 .stylingFooter label {
   text-align: left;
   font-size: 14px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   color: #3a3a3a;
 }
 
-.Logo_footer{
+.Logo_footer {
   width: 24.5%;
   margin-bottom: 1rem;
 }
 
-.fbInstaIcon{
+.fbInstaIcon {
   width: 24.5%;
   margin-bottom: 1rem;
 }
 
-.fbInstaIcon:hover img{
+.fbInstaIcon:hover img {
   transform: scale(1.1);
-
 }
 
-.f1{
+.f1 {
   margin-left: 1rem;
 }
 
-.navne{
+.navne {
   list-style: none;
   margin-left: -2.5rem;
 }
 
-.f3{
+.f3 {
   margin-left: 7rem;
 }
 .f4 {
@@ -106,7 +105,7 @@ footer {
 .label_email {
   position: absolute;
   left: 1rem;
-  top: 0.rem;
+  top: 0rem;
   padding: 0 0.5rem;
   color: #3a3a3a;
   cursor: text;
