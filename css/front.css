@@ -11,6 +11,7 @@ main,
 footer {
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 3rem;
 }
 
 .grid_4 {
@@ -78,4 +79,19 @@ footer {
   width: auto;
   border: none;
   color: white;
+}
+
+#imgindex {
+  width: 100%;
+  background-image: url(/SVG/plain2.svg);
+}
+
+.menu_buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 70%;
+  gap: 2.5rem;
+  margin-left: 10rem;
+  margin-top: 4rem;
+  margin-bottom: 7rem;
 }
