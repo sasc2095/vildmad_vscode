@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.4;
+}
+
+main,
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid_4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* footer */
+.form {
+  position: relative;
+  padding: 1rem;
+  width: auto;
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.name_form,
+.email_form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border: 2px solid #766a6a;
+  border-radius: 2rem;
+  color: aqua;
+  outline: none;
+  padding: 1.25rem;
+  background: none;
+}
+
+.name_form:hover,
+.email_form:hover {
+  border-color: #88a386;
+}
+
+.label_name,
+.label_email {
+  position: absolute;
+  left: 1rem;
+  top: 0.8rem;
+  padding: 0 0.5rem;
+  color: green;
+  cursor: text;
+  transition: top 0.2s ease-in, left 0.2s ease-in, font-size 0.2s ease-in;
+  background-color: orange;
+}
+
+.label_conditions {
+  color: pink;
+}
+
+.name_form:focus ~ .label_name,
+.name_form:not(:placeholder-shown).name_form:not(:focus) ~ .name_label,
+.email_form:focus ~ .label_email,
+.email_form:not(:placeholder-shown).email_form:not(:focus) ~ .email_label {
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+}
+
+.submit {
+  border-radius: 4rem;
+  background-color: #88a386;
+  padding: 1rem 1rem;
+  width: auto;
+  border: none;
+  color: white;
+}
