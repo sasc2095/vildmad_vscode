@@ -139,6 +139,32 @@ footer {
   margin-left: 3.5rem;
 }
 
+/*Baggrundsbillede på forside samt kategori-knapper*/
+
+h1 {
+  margin-top: 2.5rem;
+  margin-left: 3rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-left: 30rem;
+}
+
+#imgindex {
+  width: 100%;
+  background-image: url(/SVG/plain2.svg);
+}
+
+.menu_buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 70%;
+  gap: 2.5rem;
+  margin-left: 10rem;
+  margin-top: 4rem;
+  margin-bottom: 7rem;
+}
 
 /* Styling af header*/
 .logoHeader img {
