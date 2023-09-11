@@ -50,6 +50,13 @@
     margin-left: 30px;
 }
 
+.nav5klasse{
+    font-family: 'DM Sans', sans-serif;
+    margin-left: -51rem;
+    font-weight: 530;
+    font-style: italic;
+  }
+
 .navigation {
     display: flex;
     align-items: center;
