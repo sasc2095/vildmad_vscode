@@ -11,26 +11,26 @@
 
 <body id="productBackground">
   <header class="navigation">
-          <a class="logoHeader" href="index.html">
-              <img src="/SVG/logo_v2-kopi.svg" alt="Logo">
-          </a>
-          <p class="nav5klasse">5.klasse</p>
+    <a class="logoHeader" href="index.html">
+      <img src="/SVG/logo_v2-kopi.svg" alt="Logo">
+    </a>
+    <p class="nav5klasse">5.klasse</p>
 
-          <nav class="web-nav">
-              <ul>
-                  <li><a href="productlist.html">Sankelandskaber</a></li>
-                  <li><a href="https://vildmad.dk/dk">VILDMAD</a></li>
-              </ul>
-          </nav>
+    <nav class="web-nav">
+      <ul>
+        <li><a href="productlist.html">Sankelandskaber</a></li>
+        <li><a href="https://vildmad.dk/dk">VILDMAD</a></li>
+      </ul>
+    </nav>
 
-          <button class="hamburger">
-              <div class="bar"></div>
-          </button>
+    <button class="hamburger">
+      <div class="bar"></div>
+    </button>
 
-      <nav class="mobile-nav">
-          <a href="productlist.html">Sankelandskaber</a>
-          <a href="https://vildmad.dk/dk">VILDMAD</a>
-      </nav>
+    <nav class="mobile-nav">
+      <a href="productlist.html">Sankelandskaber</a>
+      <a href="https://vildmad.dk/dk">VILDMAD</a>
+    </nav>
 
   </header>
   <main>
@@ -53,7 +53,60 @@
 
 
   </main>
-  <footer></footer>
+  <footer class="stylingFooter">
+    <section class="grid_footer">
+      <div class="f1">
+        <h3>Et projekt udviklet af</h3>
+        <ul>
+        <li class="navne">
+          <p>Monica Hansen</p>
+          <p>Sascha Nielsen</p>
+          <p>Nina Hildebrandt</p>
+        </li>
+      </ul>
+      </div>
+      <div class="f2">
+        <h3> Virkeliggjort i samarbejde med</h3>
+        <img src="/SVG/vildmadLogo1.png" class="Logo_footer" alt="Logo">
+        <img src="/SVG/villdmadLogo2.png" class="Logo_footer" alt="Logo">
+        <img src="/SVG/villdmadLogo3.png" class="Logo_footer" alt="Logo">
+        <img src="/SVG/villdmadLogo4.png" class="Logo_footer" alt="Logo">
+        <img src="/SVG/villdmadLogo5.png" class="Logo_footer" alt="Logo">
+        <img src="/SVG/villdmadLogo6.png" class="Logo_footer" alt="Logo">
+      </div>
+      <div class="f3">
+        <form action="#">
+          <label>
+            <h3>Tilmeld dig nyhedsbrevet</h3>
+            <div class="form">
+              <input id="form_email" type="text" placeholder=" " name="name" required class="name_form" />
+              <label class="label_name" for="form_email"> Navn </label>
+            </div>
+            <div class="form">
+              <input id="form_email" type="email" placeholder=" " name="email" required class="email_form" />
+              <label class="label_email" for="form_email"> E-mail </label>
+            </div>
+            <div class="form_conditions">
+              <input id="form_email" type="checkbox" name="conditions" value="accept" required class="accept" />
+              <label class="label_conditions"> Jeg accepterer betingelserne</label>
+            </div>
+          </label>
+          <button class="submit">Tilmeld</button>
+        </form>
+      </div>
+      <div class="f4">
+        <a class="fbInstaIcon" href="https://www.facebook.com/vildmaddk">
+          <img src="/SVG/facebookLogo.png" alt="facebookLogo">
+        </a>
+        <h3>Facebook</h3>
+        <a class="fbInstaIcon" href="https://www.instagram.com/vildmaddk/">
+          <img src="/SVG/instagramLogo.png" alt="InstagramLogo">
+        </a>
+        <h3>Instagram</h3>
+
+      </div>
+    </section>
+  </footer>
   <script src="../javascript/productlist.js"></script>
 </body>
 
