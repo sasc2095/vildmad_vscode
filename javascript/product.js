@@ -22,7 +22,7 @@ fetch(
 
 function showProduct(product) {
   console.log(product);
-  const data = product[0];
+  const data = product[1];
   document.querySelector("p.id").textContent = data.id;
   document.querySelector(".productBox h2").textContent = data.title;
   document.querySelector("p.introduktion").textContent = data.introduktion;
