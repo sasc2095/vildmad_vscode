@@ -47,6 +47,16 @@
   font-size: 17px;
   color: #000000;
 }
+/* Knapper */
+
+.back {
+    width: 8%;
+    margin-left: 5rem;
+  }
+  
+  .back:hover{
+    transform: scale(1.1);
+  }
 
 /*Indhold af side*/
 .grid_product {
