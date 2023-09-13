@@ -25,7 +25,7 @@ function showStrande(strande) {
 }
 
 function showStrand(strand) {
-  console.log(strand);
+  console.log(strand.id);
   const template = document.querySelector("#productListTemplate").content;
   const copy = template.cloneNode(true);
 
@@ -33,8 +33,7 @@ function showStrand(strand) {
   copy.querySelector("img").src = strand.profileImage;
 
   copy
-    .querySelector(".imageProductlist")
-    .setAttribute("href", `product.html?id=${strand.id}`);
+    .querySelector(".gridProductlist #productListTemplate .a_product").href=`product.html?id=${strand.id}`;
   document.querySelector(".gridProductlist").appendChild(copy);
 }
 
