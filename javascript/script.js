@@ -1,21 +1,49 @@
+fetch("https://uutiizppilsesjcptglo.supabase.co/rest/v1/vildmadDatabase?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1dGlpenBwaWxzZXNqY3B0Z2xvIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTQwNzQ0MTgsImV4cCI6MjAwOTY1MDQxOH0.NUGKP51o37ORWFiRq3CrUp7oImAREwLfwuA5LWPaK2I")
+    .then(res => res.json())
+    .then(showArstid)
+
+function showArstid(cats) {
+    //looper og kalder showProduct
+    cats.forEach(showArstid);
+}
+
+function showArstid(cat) {
+    //fanger vores template
+    const template = document.querySelector("template").content;
+    //cloner
+    const clone = template.cloneNode(true);
+    //ændre indhold
+    clone.querySelector("a").textContent = cat.Arstid1=Arstid2Arstid3Arstid4;
+    clone.querySelector("a").href = `productlist.html?Arstid1=${cat.Arstid1Arstid2Arstid3Arstid4}`;
+
+    //apennder
+    document.querySelector("main").appendChild(clone);
+
+}
+
+
+
+
+
+
 //uutiizppilsesjcptglo.supabase.co
 // eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1dGlpenBwaWxzZXNqY3B0Z2xvIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTQwNzQ0MTgsImV4cCI6MjAwOTY1MDQxOH0
 //   .NUGKP51o37ORWFiRq3CrUp7oImAREwLfwuA5LWPaK2I;
 
-fetch("https://uutiizppilsesjcptglo.supabase.co/rest/v1/vildmad_database", {
-  method: "GET",
-  headers: {
-    apikey:
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1dGlpenBwaWxzZXNqY3B0Z2xvIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTQwNzQ0MTgsImV4cCI6MjAwOTY1MDQxOH0.NUGKP51o37ORWFiRq3CrUp7oImAREwLfwuA5LWPaK2I",
-  },
-})
-  .then((res) => res.json())
-  .then(showData);
+// fetch("https://uutiizppilsesjcptglo.supabase.co/rest/v1/vildmad_database", {
+//   method: "GET",
+//   headers: {
+//     apikey:
+//       "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1dGlpenBwaWxzZXNqY3B0Z2xvIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTQwNzQ0MTgsImV4cCI6MjAwOTY1MDQxOH0.NUGKP51o37ORWFiRq3CrUp7oImAREwLfwuA5LWPaK2I",
+//   },
+// })
+//   .then((res) => res.json())
+//   .then(showData);
 
-function showData(database) {
-  console.log(database);
-  //   items.forEach();
-}
+// function showData(database) {
+//   console.log(database);
+//   //   items.forEach();
+// }
 
 // let filterWinter = arrayWinter.filter((winter - button, frontpage, array) => { return database.season == 11,0,1 == 'winter' });
 
