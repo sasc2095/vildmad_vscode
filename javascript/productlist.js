@@ -32,9 +32,7 @@ function showStrand(strand) {
   copy.querySelector(".title").textContent = strand.title;
   copy.querySelector("img").src = strand.profileImage;
 
-  copy
-    .querySelector(".imageProductlist")
-    .setAttribute("href", `product.html?id=${strand.id}`);
+  copy.querySelector(".imageProductlist").setAttribute("href", `product.html?id=${strand.id}`);
   document.querySelector(".gridProductlist").appendChild(copy);
 }
 
